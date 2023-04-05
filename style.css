@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+/* kích thước màn hình 1280x720 */
+#wapper{
+    width: 100%;
+    height: 100vh;
+}
+
+#header{
+    width: 100%;
+    padding: 0 30px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    
+}
+
+#menu .item{
+    margin: 0px 25px;
+}
+
+#menu .item a {
+    text-decoration: none;
+    color: #626a67;
+}
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin: 0px 12px;
+}
+
+#banner{
+    width: 100%;
+    height: 436px;
+    background-image: url(/assets/img/banner.png);
+    display: flex;
+    margin-top: 40px;
+    padding: 0px 133px;
+    position: relative;
+    
+}
+
+#banner .box-left , #banner .box-right {
+    width: 50%;
+}
+
+#banner .box-left h2 {
+    font-size: 48px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+#banner .box-left p {
+   
+    color: #D0D0D0;
+    margin-top: 10px;
+}
+
+#banner .box-left button {
+   width: 191px;
+   height: 40px;
+   margin-top: 41px;
+   background-color: #1d1d1d;
+   color: #fff;
+   border: none;
+   outline: none;
+   font-weight: bold;
+   border-radius: 20px;
+   transition: 0.4s;
+    
+}
+
+#banner .box-left button:hover {
+    background-color: orange;
+}
+
+#banner .box-right {
+    display: flex;
+    padding-left: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#banner .box-right img {
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+}
+
+#banner .box-right img:nth-child(1) {
+    animation-delay: 0.5s;
+
+}
+#banner .box-right img:nth-child(2) {
+    animation-delay: 1s;
+
+}
+
+@keyframes animation{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.to-bottom{
+    bottom: -40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#wp-products{
+    padding-top: 116px;
+    padding-bottom: 78px;
+    padding-left: 134px;
+    padding-right: 134px;
+}
+
+#wp-products h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size: 32px;
+    color: #626a67;
+}
+
+
+#list-products  {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#list-products .item {
+    width: 290px;
+    height: 374px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-color: #362f2f;
+}
+
+#list-products .item img {
+    display: block;
+    margin: 0px auto;
+    margin-top: 17px;
+}
+
+#list-products .item .stars {
+    display: flex;
+    width: 50%;
+    margin: 0px auto;
+}
+#list-products .item .name {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 21px;
+}
+
+#list-products .item .desc {
+    text-align: center;
+    color: #626a67;
+}
+
+#list-products .item .price {
+    text-align: center;
+    color: #f42424;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#list-pages{
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    list-style: none;                                                               
+    justify-content: center;
+    align-items: center;
+}
+
+#list-pages .item {
+    margin: 0px 15px;
+    width: 37px;
+    height: 37px;
+    background-color: #362f2f;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#list-pages .item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#sale-off {
+    width: 100%;
+    display: flex;
+    height: 332px;
+}
+
+#sale-off .box-left, .box-right {
+    width: 50%;
+    margin-top: 30px;
+
+}
+
+#sale-off .box-left {
+    background-color: #3e413e;
+    text-align: center;
+    min-height: 332px;
+    
+}
+
+#sale-off .box-left h1 {
+    padding-top: 38px;
+}
+
+
+#sale-off .box-left span:nth-child(1) {
+    color: #fff;
+    font-size: 50px;
+}
+
+#sale-off .box-left span:nth-child(2) {
+    color: orange;
+    font-size: 128px;
+}
+
+#sale-off .box-right {
+    background-image: url(/assets/img/off.png);
+    padding-top: 38px;
+    min-height: 332px;
+}
+
+#comment{
+    width: 1024px;
+    height: 478px;
+    margin: 0px auto;
+    margin-top: 184px;
+    margin-bottom: 50px;
+}
+
+#comment h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #626a67;
+}
+
+#body-cmt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#list-cmt{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition: 0.5s;
+}
+
+#list-cmt .item{
+    width: 100%;
+    height: 100%;
+    background: #362f2f;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+
+#list-cmt .item .avatar{
+    text-align: center;
+    margin-top: 13px;
+}
+
+#list-cmt .item .star{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    margin-top: 18px;
+    width: 50%;
+
+}
+
+#list-cmt .item .name{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+#list-cmt .item .text{
+    text-align: center;
+    color: #fff;
+}
+
+#footter{
+    width: 100%;
+    height: 322px;
+    background: rgb(0, 0,0,0.79);
+    margin-top: 338px;
+    padding-top: 57px;
+    padding: 0px 67px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footter .box{
+    width: 250px;
+    color: #fff;
+}
+
+#footter .box .quick-menu{
+    margin-top: 40px;
+}
+
+#footter .box h3{
+    margin-top: 20px;
+}
+#footter .box .logo{
+    margin-top: 20px;
+}
+
+#footter .box .quick-menu .item{
+    margin-bottom: 12px;
+    margin-left: 15px;
+
+}
+
+#footter .box .quick-menu .item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#footter .box form input {
+    width: 294px;
+    height: 42px;
+    background: transparent;
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+#footter .box form button{
+    background: #362f2f;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 30px;
+    margin-top: 29px;
+    color: #fff;
+}
